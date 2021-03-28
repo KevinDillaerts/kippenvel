@@ -14,18 +14,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  padding: 10px;
-}
-
-a:focus {
-  outline: none;
-  border-radius: 10px;
-  box-shadow: 0 0 0 4px var(--accent);
-}
-
 nav {
   position: fixed;
   z-index: 2;
@@ -40,6 +28,18 @@ nav {
 .nav__logo {
   display: block;
   margin-right: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+}
+
+nav a:focus {
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px var(--accent);
 }
 
 nav img {
@@ -153,6 +153,10 @@ aside {
   width: 450px;
   height: 650px;
   overflow: hidden;
+}
+
+.posters a:not(:last-child) {
+  margin-right: 30px;
 }
 
 .posters a img {
