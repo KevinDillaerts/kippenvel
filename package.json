@@ -1,0 +1,12 @@
+{
+  "name": "kippenvel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "surge . kippenvel.surge.sh",
+    "start": "live-server --browser='Google Chrome'"
+  },
+  "author": "Kevin Dillaerts",
+  "license": "ISC"
+}
