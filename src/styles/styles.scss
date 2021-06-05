@@ -1,0 +1,51 @@
+@use "./reset";
+@use "./variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+body {
+  background-color: $background;
+  color: $text;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight: 300;
+  padding: 40px 100px 0 100px;
+  background-color: $background;
+  a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+  }
+  a:focus {
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px $accent;
+  }
+  &__logo {
+    display: block;
+    margin-right: auto;
+    &__img {
+      display: block;
+      width: 320px;
+      height: auto;
+    }
+  }
+  &__ul {
+    display: flex;
+    &__li {
+      margin-right: 5rem;
+    }
+  }
+  &__social {
+    fill: $text;
+  }
+}
+
+.main {
+  padding-top: 200px;
+}
