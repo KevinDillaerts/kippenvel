@@ -1,12 +1,17 @@
 {
   "name": "kippenvel",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "deploy": "surge . kippenvel.surge.sh",
-    "start": "live-server --browser='Google Chrome'"
+    "start": "parcel serve ./src/index.html --open 'google chrome'",
+    "clean": "sudo rm -rf ./dist ./.parcel-cache ./out",
+    "build": "npm run clean && parcel build ./src/index.html --dist-dir ./out --no-source-maps",
+    "serve": "live-server ./out --browser='Google Chrome'",
+    "deploy": "surge ./out --domain https://kippenvel.surge.sh"
   },
+  "browserslist": "> 2%",
+  "keywords": [],
   "author": "Kevin Dillaerts",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.3.1"
+  }
 }

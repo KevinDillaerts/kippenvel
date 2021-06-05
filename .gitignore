@@ -1,2 +1,6 @@
-+assets/
 .DS_Store
++assets
+node_modules
+dist
+out
+.parcel-cache
