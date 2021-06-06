@@ -1,1 +1,1 @@
-Live demo @ https://www.kippenvel.surge.sh
+Live demo @ https://kippenvel.surge.sh/
