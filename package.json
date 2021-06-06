@@ -1,7 +1,7 @@
 {
   "name": "kippenvel",
   "scripts": {
-    "start": "parcel serve ./src/index.html --open 'google chrome'",
+    "start": "parcel serve ./src/index.html --open 'google-chrome'",
     "clean": "sudo rm -rf ./dist ./.parcel-cache ./out",
     "build": "npm run clean && parcel build ./src/index.html --dist-dir ./out --no-source-maps",
     "serve": "live-server ./out --browser='Google Chrome'",

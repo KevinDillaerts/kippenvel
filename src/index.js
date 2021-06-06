@@ -10,7 +10,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     nav.classList.add("nav--sticky");
     trigger.classList.add("nav__trigger--sticky");
   } else {
