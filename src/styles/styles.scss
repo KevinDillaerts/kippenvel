@@ -1,6 +1,10 @@
-@use "./reset";
 @use "./variables" as *;
+@import url("./_reset.scss");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: $background;
@@ -53,14 +57,13 @@ p {
   display: flex;
   align-items: center;
   font-weight: 300;
-  padding: 3vh 5vw 0 5vw;
+  padding: 0 5vw;
   background-color: $background;
   transition: all 300ms;
   &--sticky {
     box-shadow: 0 0 10px #000;
-    padding-top: 10px;
     .nav__logo__img {
-      height: 4rem;
+      height: 3.5rem;
     }
   }
   &__wrapper {
@@ -71,6 +74,7 @@ p {
   a {
     text-decoration: none;
     color: inherit;
+    position: relative;
     padding: 0.625rem;
   }
   a:focus-visible {
@@ -93,6 +97,21 @@ p {
     display: flex;
     &__li {
       margin-right: 5rem;
+      a::after {
+        content: "";
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 0%;
+        background-color: $text;
+        transition: all 300ms;
+      }
+      &:hover a::after {
+        width: 75%;
+      }
     }
   }
   &__social {
