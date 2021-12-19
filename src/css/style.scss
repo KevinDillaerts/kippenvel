@@ -1,5 +1,64 @@
 @use "./base/mixins" as *;
 @use "./base/variables" as *;
 @use "./base/reset";
-@use "./base/fonts";
 @use "../icons/style.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $background;
+  color: $text;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1em;
+  &:focus {
+    outline: 1px solid $accent;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+p {
+  font-weight: 400;
+  margin-bottom: 1.5em;
+  line-height: 1.2rem;
+}
+
+.nav {
+  position: sticky;
+  background-color: $background;
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  &__wrapper {
+    margin-left: auto;
+    display: flex;
+    font-weight: 300;
+  }
+  &__links {
+    display: flex;
+    font-size: 1.2rem;
+    & li {
+      margin-right: 2rem;
+    }
+  }
+}
+
+.main {
+  background-color: $background;
+  display: flex;
+  align-items: center;
+}

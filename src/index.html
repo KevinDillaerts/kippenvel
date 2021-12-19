@@ -9,7 +9,27 @@
   <body>
     <include src="./symbol-defs.svg"></include>
     <include src="./header.html"></include>
-    <h1>Home</h1>
+    <main class="main">
+      <picture>
+        <source srcset="./images/maximedia-border.png?as=avif&height=500" type="image/avif" />
+        <source srcset="./images/maximedia-border.png?as=webp&height=500" type="image/webp" />
+        <source srcset="./images/maximedia-border.png?height=500" type="image/png" />
+        <img src="./images/maximedia-border.png" alt="test image" />
+      </picture>
+      <section>
+        <h1>Onder Garantie</h1>
+        <p>Welkom bij Maxi Media.</p>
+        <p>Onze ervaren verkopers staan steeds klaar om u verder te helpen.</p>
+        <p>Kom zeker eens langs en laat u inspireren door het enthousiasme van onze medewerkers</p>
+        <p>Tevredenheid gegarandeerd!</p>
+        <p>...althans, dit is het stuk dat we zouden spelen in april 2020.</p>
+        <p>
+          We weten nog niet wanneer Kippenvel opnieuw op de planken zal staan, maar wanneer dat
+          eraan komt, ga je dit zeker horen!
+        </p>
+        <p>Hopelijk tot snel! <br />de Kippenvellers</p>
+      </section>
+    </main>
     <include src="./footer.html"></include>
     <script src="./js/index.js" type="module"></script>
   </body>
