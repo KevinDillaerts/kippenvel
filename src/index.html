@@ -9,14 +9,16 @@
   <body>
     <include src="./symbol-defs.svg"></include>
     <include src="./header.html"></include>
-    <main class="main">
-      <picture>
-        <source srcset="./images/maximedia-border.png?as=avif&height=500" type="image/avif" />
-        <source srcset="./images/maximedia-border.png?as=webp&height=500" type="image/webp" />
-        <source srcset="./images/maximedia-border.png?height=500" type="image/png" />
-        <img src="./images/maximedia-border.png?height=500" alt="test image" />
-      </picture>
-      <section>
+    <main class="main container">
+      <div class="main__image">
+        <picture>
+          <source srcset="./images/maximedia-border.png?as=avif" type="image/avif" />
+          <source srcset="./images/maximedia-border.png?as=webp" type="image/webp" />
+          <source srcset="./images/maximedia-border.png" type="image/png" />
+          <img src="./images/maximedia-border.png" alt="test image" />
+        </picture>
+      </div>
+      <section class="main__text">
         <h1>Onder Garantie</h1>
         <p>Welkom bij Maxi Media.</p>
         <p>Onze ervaren verkopers staan steeds klaar om u verder te helpen.</p>
@@ -24,12 +26,33 @@
         <p>Tevredenheid gegarandeerd!</p>
         <p>...althans, dit is het stuk dat we zouden spelen in april 2020.</p>
         <p>
-          We weten nog niet wanneer Kippenvel opnieuw op de planken zal staan, maar wanneer dat
-          eraan komt, ga je dit zeker horen!
+          We weten nog niet wanneer we opnieuw op de planken zullen staan, maar we houden je op de
+          hoogte!
         </p>
         <p>Hopelijk tot snel! <br />de Kippenvellers</p>
       </section>
     </main>
+    <aside class="aside">
+      <h2>Vorige producties</h2>
+      <div class="posters">
+        <a href="">
+          <div class="posters__wrapper">
+            <img src="./images/Affiche_leefden.jpg" alt="affiche Ze Leefden Nog Lang" />
+          </div>
+        </a>
+        <a href="">
+          <div class="posters__wrapper">
+            <img src="./images/Affiche_Rik.jpg" alt="affiche Rik's café" />
+          </div>
+        </a>
+        <a href="">
+          <div class="posters__wrapper">
+            <img src="./images/Affiche_madame.jpg" alt="affiche U heeft gebeld, Madame?" />
+          </div>
+        </a>
+      </div>
+      <a href="" class="button">Alle producties</a>
+    </aside>
     <include src="./footer.html"></include>
     <script src="./js/index.js" type="module"></script>
   </body>
