@@ -6,6 +6,7 @@
 @use "./base/homepage";
 @use "./base/header";
 @use "./base/footer";
+@use "./base/about";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
@@ -42,9 +43,9 @@ h2 {
 }
 
 p {
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 1.5em;
-  line-height: 1.2rem;
+  line-height: 1.75rem;
 }
 
 .button {
