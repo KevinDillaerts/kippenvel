@@ -3,10 +3,11 @@
 @use "./base/reset";
 @use "../icons/style.css";
 
-@use "./base/homepage";
-@use "./base/header";
-@use "./base/footer";
-@use "./base/about";
+@use "./base/components/header";
+@use "./base/components/footer";
+@use "./base/pages/homepage";
+@use "./base/pages/about";
+@use "./base/pages/contact";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
@@ -50,6 +51,7 @@ p {
 }
 
 .button {
+  border: none;
   padding: 1.5rem;
   border-radius: 50px;
   font-weight: 400;
@@ -57,6 +59,7 @@ p {
   letter-spacing: 0.05em;
   margin: 2rem 0;
   cursor: pointer;
+  transition: all 300ms ease-in;
 }
 
 .container {

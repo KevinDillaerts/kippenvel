@@ -9,6 +9,44 @@
   <body>
     <include src="./symbol-defs.svg"></include>
     <include src="./header.html"></include>
+    <main class="contact container">
+      <h1>Contact</h1>
+      <section class="contact__wrapper">
+        <div class="contact__text">
+          <h3>
+            Wil je iets kwijt? <br />
+            Of heb je vragen? <br />
+            Blijf niet met je ei zitten en stuur ons een bericht!
+          </h3>
+          <a href="mailto: info@kippenvel.be">info@kippenvel.be</a>
+        </div>
+        <form action="submit" class="contact__form">
+          <div class="name__wrapper">
+            <div class="name__first">
+              <label for="fname">Voornaam *</label><br />
+              <input type="text" id="fname" name="fname" size="30" required /><br />
+            </div>
+            <div class="name__last">
+              <label for="lname">Achternaam *</label><br />
+              <input type="text" id="lname" name="lname" size="30" required />
+            </div>
+          </div>
+          <label for="email">E-mail *</label><br />
+          <input type="email" id="email" name="email" required />
+          <label for="message">Bericht *</label><br />
+          <textarea
+            name="textarea"
+            rows="3"
+            cols="30"
+            id="message"
+            name="message"
+            required
+          ></textarea>
+          <button class="button">Verstuur</button>
+        </form>
+      </section>
+    </main>
+
     <include src="./footer.html"></include>
     <script src="./js/index.js" type="module"></script>
   </body>
