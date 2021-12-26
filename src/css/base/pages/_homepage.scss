@@ -10,13 +10,13 @@
     margin-bottom: 1rem;
     & img {
       display: block;
-      width: 100%;
-      width: clamp(25rem, 50vw, 50rem);
+      width: clamp(10rem, 100%, 40rem);
       height: auto;
+      margin: 0 auto;
     }
   }
   &__text {
-    max-width: 48ch;
+    max-width: 40ch;
   }
 }
 
