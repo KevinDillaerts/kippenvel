@@ -20,34 +20,28 @@
           </h3>
           <a href="mailto: info@kippenvel.be">info@kippenvel.be</a>
         </div>
-        <form action="submit" class="contact__form">
+        <form action="submit" class="contact__form" id="contact-form">
           <div class="name__wrapper">
             <div class="name__first">
-              <label for="fname">Voornaam *</label><br />
-              <input type="text" id="fname" name="fname" size="30" required /><br />
+              <label for="user_fname">Voornaam *</label><br />
+              <input type="text" id="user_fname" name="user_fname" size="30" required /><br />
             </div>
             <div class="name__last">
-              <label for="lname">Achternaam *</label><br />
-              <input type="text" id="lname" name="lname" size="30" required />
+              <label for="user_lname">Achternaam *</label><br />
+              <input type="text" id="user_lname" name="user_lname" size="30" required />
             </div>
           </div>
-          <label for="email">E-mail *</label><br />
-          <input type="email" id="email" name="email" required />
+          <label for="user_email">E-mail *</label><br />
+          <input type="email" id="user_email" name="user_email" required />
           <label for="message">Bericht *</label><br />
-          <textarea
-            name="textarea"
-            rows="3"
-            cols="30"
-            id="message"
-            name="message"
-            required
-          ></textarea>
-          <button class="button">Verstuur</button>
+          <textarea rows="3" cols="30" id="message" name="message" required></textarea>
+          <button class="button" id="button">Verstuur</button>
         </form>
       </section>
     </main>
 
     <include src="./footer.html"></include>
     <script src="./js/index.js" type="module"></script>
+    <script src="./js/email.js" type="module"></script>
   </body>
 </html>

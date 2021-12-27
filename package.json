@@ -17,5 +17,8 @@
     "parcel": "^2.0.1",
     "posthtml-include": "^1.7.1",
     "sharp": "^0.29.3"
+  },
+  "dependencies": {
+    "emailjs-com": "^3.2.0"
   }
 }
