@@ -1,8 +1,27 @@
 import baguetteBox from "baguettebox.js";
 
-window.addEventListener("load", function () {
+const allImages = [...document.querySelectorAll("img")].map((image) => image.src);
+const gallery = document.querySelector(".gallery");
+const loader = document.querySelector(".loader");
+
+const preLoadImage = (url) =>
+  new Promise((resolve, reject) => {
+    const img = new Image();
+    img.src = url;
+    img.onload = resolve;
+    img.onerror = reject;
+  });
+
+const preLoadImages = (arr) => Promise.all(arr.map(preLoadImage));
+
+const render = async () => {
+  await preLoadImages(allImages);
+  loader.style.display = "none";
+  gallery.style.display = "flex";
   baguetteBox.run(".gallery");
-});
+};
+
+render();
 
 // const makeLinks = () => {
 //   let htmlstring = "";

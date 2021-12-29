@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .producties {
   display: flex;
   flex-direction: column;
@@ -45,8 +47,26 @@
       }
     }
   }
+  & .loader {
+    border: 16px solid $text;
+    border-top: 16px solid $accent;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin-top: 5rem;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   & .gallery {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;

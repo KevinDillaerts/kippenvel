@@ -4,7 +4,7 @@ header {
   position: sticky;
   top: 0;
   background-color: $background;
-  padding: 2rem;
+  padding: 1rem 4rem;
   z-index: 2;
   & .nav {
     display: flex;
@@ -12,7 +12,7 @@ header {
     max-width: 1400px;
     margin: 0 auto;
     &__logo img {
-      height: 7.5rem;
+      height: 6rem;
     }
     &__wrapper {
       margin-left: auto;
