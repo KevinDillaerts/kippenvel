@@ -17,8 +17,3 @@ const activeNavlink = document.querySelectorAll(
 
 activeNavlink[0].classList.add("active");
 //-----------------------
-
-/* 
-To do's:
-- add favicons
-*/
