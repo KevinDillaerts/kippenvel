@@ -48,13 +48,14 @@
     }
   }
   & .loader {
-    border: 16px solid $text;
-    border-top: 16px solid $accent;
+    display: block;
+    border: 1rem solid $text;
+    border-top: 1rem solid $accent;
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-    margin-top: 5rem;
-    animation: spin 2s linear infinite;
+    width: 8rem;
+    height: 8rem;
+    margin-top: 3rem;
+    animation: spin 1500ms linear infinite;
   }
 
   @keyframes spin {
