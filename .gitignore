@@ -22,7 +22,7 @@ dist/
 # misc
 .DS_Store
 *.pem
-assets/
+assets&docs/
 
 # debug
 npm-debug.log*
