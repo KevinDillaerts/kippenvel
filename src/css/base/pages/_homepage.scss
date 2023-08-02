@@ -17,7 +17,7 @@
     }
   }
   &__text {
-    max-width: 40ch;
+    max-width: 50ch;
   }
   & section {
     & p:last-of-type {
@@ -78,7 +78,7 @@
   }
 }
 
-@media screen and(max-width: 960px) {
+@media screen and (max-width: 960px) {
   .main {
     grid-template-columns: auto;
     &__text {
@@ -87,7 +87,7 @@
   }
 }
 
-@media screen and(max-width: 700px) {
+@media screen and (max-width: 700px) {
   .aside {
     .posters {
       max-width: 1400px;
