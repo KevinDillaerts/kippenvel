@@ -29,11 +29,14 @@ render();
 //   for (i = 1; i <= 28; i++) {
 //     const s = String(i);
 //     htmlstring += `
-//     <a href="../images/producties/onderweg/onderweg_${s.padStart(3, "0")}.jpg">
+//     <a href="../images/producties/kippenvel_griezelt/kippenvel_griezelt_${s.padStart(3, "0")}.jpg">
 //     <img
 //       class="gallery__thumbnail"
-//       src="../images/producties/onderweg/thumbnails/onderweg_thumb_${s.padStart(3, "0")}.jpg"
-//       alt="Foto uit Onderweg"
+//       src="../images/producties/kippenvel_griezelt/thumbnails/kippenvel_griezelt_thumb_${s.padStart(
+//         3,
+//         "0"
+//       )}.jpg"
+//       alt="Foto uit Kippenvel Griezelt"
 //     />
 //   </a>
 // `;

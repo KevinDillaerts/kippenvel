@@ -17,3 +17,6 @@ const activeNavlink = document.querySelectorAll(
 
 activeNavlink[0].classList.add("active");
 //-----------------------
+
+const copyright = document.querySelector("#copyright");
+copyright.insertAdjacentText("beforeend", ` ${new Date().getFullYear()}`);
